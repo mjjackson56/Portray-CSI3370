@@ -1,0 +1,212 @@
+$primary: #1565c0 // primary
+$light: #5e92f3 // light
+$dark: #003c8f // dark
+
+$focused: #ccc
+
+html, body
+    margin: 0
+    padding: 0
+    height: 100%
+
+body
+    font-family: Arial, Helvetica, sans-serif
+    margin: 0
+    height: 100%
+    display: flex
+    flex-direction: column
+
+#mainContent
+    font-family: 'Roboto', sans-serif
+    display: flex
+    justify-content: center
+    flex-direction: row
+    padding-left: 20rem
+    position: relative
+    flex-grow: 1
+    tranition: padding-left .35s
+
+.mainContentFullScreen
+    padding-left: 0 !important
+
+#toolbox
+    position: absolute
+    background-color: $primary
+    display: flex
+    flex-direction: column
+    top: 0
+    left: 0
+    height: 100%
+    width: 20rem
+    transition: left .35s
+
+.toolboxHidden
+    left: -20rem !important
+
+#pulloutTab
+    position: absolute
+    right: -2.5rem
+    top: 0
+    width: 2rem
+    padding: 0 .5rem
+    background-color: $primary
+    border-radius: 0 .5rem .5rem 0
+
+#rightArrow
+    display: none
+#leftArrow
+    display: block
+
+.rightArrowShow
+    display: block !important
+
+.leftArrowHide
+    display: none !important
+
+.row
+    margin: 1rem .5rem
+    display: flex
+    flex-direction: row
+
+#sizeRow
+    justify-content: space-around
+
+#penToolRow
+    position: relative
+    justify-content: center
+    border: 3px solid white
+    border-radius: .5rem
+    padding-top: .75rem
+
+    transition: all .3s
+    &:hover
+        border-color: $light
+        span
+            color: white
+            background: $light
+
+    span
+        position: absolute
+        background: white
+        top: -.75rem
+        left: .5rem
+        padding: .25rem .5rem
+        border-radius: .25rem
+        transition: all .3s
+
+    svg
+        background: white
+        width: 25px
+        margin: .5rem
+        padding: 1rem
+        clip-path: circle(48%)
+
+        transition: all .3s
+        &:hover
+            color: white
+            background: $light
+
+#shapeToolRow
+    position: relative
+    justify-content: center
+    border: 3px solid white
+    border-radius: .5rem
+    padding-top: .75rem
+
+    transition: all .3s
+    &:hover
+        border-color: $light
+        span
+            color: white
+            background: $light
+
+    span
+        position: absolute
+        background: white
+        top: -.75rem
+        left: .5rem
+        padding: .25rem .5rem
+        border-radius: .25rem
+        transition: all .3s
+
+    button
+        background: white
+        width: 50px !important
+        height: auto
+        margin: .5rem
+        outline: none
+        border: none
+        border-radius: .25rem
+
+        transition: all .3s
+        &:hover
+            color: white
+            background: $light
+
+#textInputRow
+    display: flex
+    flex-direction: column
+    align-items: center
+
+#uploadRow
+    display: flex
+    flex-direction: column
+    align-items: center
+
+#customeColorContainer
+    position: relative
+    display: flex
+    flex-direction: row
+    border: 3px solid white
+    border-radius: .5rem
+    padding: .5rem
+    padding-top: 1.5rem
+
+    transition: all .3s
+    &:hover
+        border-color: $light
+        span
+            color: white
+            background: $light
+
+    span
+        position: absolute
+        background: white
+        top: -.75rem
+        left: .5rem
+        padding: .25rem .5rem
+        border-radius: .25rem
+        transition: all .3s
+
+    #colorSlidersDiv
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        #colorR
+            background-color: red
+
+#logoContainer
+    flex-grow: 1
+
+    div img
+            width: 100%
+            height: auto
+            opacity: .9
+
+#saveWorkRow
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    svg
+        background: white
+        width: 25px
+        margin: .5rem 1rem
+        padding: 1rem
+        clip-path: circle(48%)
+
+        transition: all .3s
+        &:hover
+            color: white
+            background: $light

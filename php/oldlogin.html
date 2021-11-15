@@ -1,0 +1,79 @@
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" href="nav.css">
+    <title>Portay - Login</title>
+
+    <style>
+        .login {
+            text-align: center;
+            padding: 200px;
+            color: white;
+        }
+
+        .field {
+            font-size: 30px;
+        }
+
+        .resize {
+            font-style: bold;
+            font-size: 30px;
+            color: white;
+
+        }
+
+        .center {
+            text-align: center;
+            font-size: 42px;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #1565c0;
+        }
+
+        .card {
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 100);
+            margin: 8px;
+            padding: 4px;
+            background-color: #003c8f;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="Login">
+        <h1 class="center">Login/Register</h1><br>
+
+        <form id="Login">
+
+            <label class="resize">Username:</label>
+
+            <input class="field" type="text" required>
+
+            <br><br>
+
+            <label class="resize">Password:</label>
+            <input class="field" type="Password" required>
+
+            <br><br>
+
+            <button class=loginButton id="loginUserButton" onclick="loginUser()">Login</button>
+
+
+            <button id=register class=registerButton>Register</button>
+
+            <br><br><br>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
